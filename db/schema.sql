@@ -1,12 +1,10 @@
-### Schema
+USE dsd7eid1r7hjlvrk;
 
-CREATE DATABASE burger_db;
-USE burger_db;
-
-CREATE TABLE burgers
-(
-	id int NOT NULL AUTO_INCREMENT,
-	name varchar(255) NOT NULL,
-	sleepy BOOLEAN DEFAULT false,
-	PRIMARY KEY (id)
-);
+DROP TABLE IF EXISTS burgers;
+ CREATE TABLE burgers(
+    burID INT AUTO_INCREMENT NOT NULL,
+    burName VARCHAR(255),
+    burDevoured BOOLEAN DEFAULT 0,
+    burPhoto VARCHAR(255),
+    PRIMARY KEY(burID)
+ );
