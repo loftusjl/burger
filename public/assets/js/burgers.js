@@ -6,9 +6,6 @@ $(function() {
     $('.materialboxed').materialbox();
     $('.parallax').parallax();
     $('.tooltipped').tooltip();
-    $('.fixed-action-btn').floatingActionButton({
-      toolbarEnabled: true
-    });
   })
   $(".change-burDevoured").on("click", function(event) {
     var id = $(this).data("id");
