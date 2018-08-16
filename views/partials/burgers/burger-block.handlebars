@@ -1,9 +1,9 @@
 <li>
 	<img src="{{burPhoto}}" alt="" class="burgerPic">
 	{{burName}}
-	<button class="change-burDevoured" data-id="{{id}}" data-newburdevoured="{{burDevoured}}"> 
+	<button class="change-burDevoured waves-effect waves-light btn" data-id="{{id}}" data-newburdevoured="{{burDevoured}}"> 
 		{{#if burDevoured}}Make Burger{{else}}Burger Time!{{/if}}
 	</button>
 
-	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
+	<button class="delete-burger waves-effect waves-light btn" data-id="{{this.id}}">DELETE!</button>
 </li>

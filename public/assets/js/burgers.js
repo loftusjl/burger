@@ -1,5 +1,15 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
+
+  $(document).ready(function () {
+    $('.sidenav').sidenav();
+    $('.materialboxed').materialbox();
+    $('.parallax').parallax();
+    $('.tooltipped').tooltip();
+    $('.fixed-action-btn').floatingActionButton({
+      toolbarEnabled: true
+    });
+  })
   $(".change-burDevoured").on("click", function(event) {
     var id = $(this).data("id");
     var newburDevoured = $(this).data("newburdevoured");
