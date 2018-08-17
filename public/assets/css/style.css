@@ -10,7 +10,9 @@ body {
 button {
   font-family: 'Architects Daughter', cursive;
 }
-
+h1 {
+  font-size: 8em;
+}
 h1,
 h2,
 h3,
@@ -37,7 +39,9 @@ header {
 .fullRow {
   width: 100vw;
 }
-
+.text-shadow{
+  text-shadow: 2px 2px #000000
+}
 .outlineText {
   text-shadow: -1px 0 #000000a4, 0 1px #000000, 1px 0 #00000071, 0 -1px #00000071;
 }
