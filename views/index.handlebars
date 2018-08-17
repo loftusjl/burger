@@ -1,3 +1,4 @@
+<h1 class="center-align red-text text-darken-4 text-shadow">Burger Bonzai</h1>
 <div class="fullRow yellow">
   <div class="container">
     <h2>Available Burgers</h2>
@@ -9,25 +10,32 @@
 
 <div class="fullRow red">
   <div class="container">
-    <h2>Devoured!</h2>
+    <h2>Burgers Devoured!</h2>
     <div class="row">
       {{#each burgers}} {{#if burDevoured}} {{> burgers/burger-block burDevoured=1}} {{/if}} {{/each}}
     </div>
   </div>
 </div>
 
-<h2>Add a burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="burg" class="flow-text">Burger Name:</label>
-    <input type="text" id="burg" name="name">
-  </div>
-
-  <div class="form-group">
-    <label for="photo" class="flow-text">Burger Picture:</label><br>
-    <input type="text" id="photo" name="burgPhoto">
-  </div>
-
-  <button type="submit">Add burger</button>
-</form>
+<footer class="red lighten-2 yellow-text text-lighten-4">
+<div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h3>Add a burger</h3>
+        <form class="create-form">
+          <div class="input-field">
+            <input type="text" id="burg" name="name" class="yellow-text text-lighten-4">
+            <label for="burg" class="flow-text yellow-text text-lighten-4">Burger Name</label>
+          </div>
+        
+          <div class="input-field">
+            <input type="text" id="photo" name="burgPhoto">
+            <label for="photo" class="flow-text yellow-text text-lighten-4">Burger Picture (copy the url of a photo and paste it here)</label>
+          </div>
+        
+          <button type="submit" class="change-burDevoured waves-effect waves-light btn orange">Add burger</button>
+        </form>
+      </div>
+    </div>
+</div>
+</footer>

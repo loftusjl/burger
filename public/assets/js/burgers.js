@@ -6,6 +6,7 @@ $(function() {
     $('.materialboxed').materialbox();
     $('.parallax').parallax();
     $('.tooltipped').tooltip();
+
   })
   $(".change-burDevoured").on("click", function(event) {
     var id = $(this).data("id");
